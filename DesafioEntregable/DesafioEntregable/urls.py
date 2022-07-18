@@ -16,6 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from DesafioEntregable.views import carga_pariente
+
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('carga_pariente/<nombre>/<parentezco>/<edad>/<fecha_nacimiento>', carga_pariente),
 ]
